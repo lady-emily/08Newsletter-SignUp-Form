@@ -259,7 +259,6 @@ body {
     .container-subscribed { 
         width: 90%;
         padding: 10px; 
-        background-color: transparent;
     }
 
     .container-subscribed h2 { 
@@ -273,7 +272,7 @@ body {
     .dismiss-button { 
         font-size: 14px; padding: 10px; margin-top: 15px; 
     }
-    }
+}
 
     @media (min-width: 1440px) {
     .container {
