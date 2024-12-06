@@ -1,0 +1,228 @@
+/* General Body Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: hsl(234, 29%, 20%); /* Dark Slate Grey */
+    color: hsl(0, 0%, 100%); /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Headings */
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%); /* Dark Slate Grey */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 100%); /* White */
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    transition: all 0.3s ease-in-out;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: none;
+    width: 100px;
+    /* background-color: blue; */
+}
+
+.right {
+    flex: 1;
+    background-image: url("../images/illustration-sign-up-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Paragraphs */
+.paragraph {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(234, 29%, 20%);
+    margin: 10px 0;
+}
+
+.list p {
+    display: flex;
+    font-size: 15px;
+    color: hsl(234, 29%, 20%);
+    margin: none;
+    padding: none;
+    /* background-color: aquamarine; */
+}
+
+.list img {
+    margin-right: 10px;
+}
+
+/* Form Styles */
+.form-group {
+    margin: 15px 0;
+}
+
+.form-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 800;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 5px;
+}
+
+#email-error {
+    color: hsl(4, 100%, 67%); /* Tomato */
+    font-size: 12px;
+    display: none;
+}
+
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid hsl(231, 7%, 60%); /* Grey */
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: hsl(4, 100%, 67%); /* Tomato */
+    background-color: hsl(0, 0%, 100%);
+}
+
+.error-border {
+    border-color: hsl(4, 100%, 67%) !important; /* Red border for invalid email */
+}
+
+/* Submit Button Styles */
+.btn-submit {
+    background-color: hsl(235, 18%, 26%); /* Charcoal Grey */
+    color: hsl(0, 0%, 100%); /* White */
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: hsl(4, 100%, 67%); /* Tomato */
+}
+
+/* Success Container Styles */
+.container-subscribed {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%); /* White */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 27%;
+    max-width: 800px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.container-subscribed img {
+    width: 50px;
+    margin: 20px auto;
+}
+
+.container-subscribed p {
+    font-size: 16px;
+    color: hsl(235, 18%, 26%); /* Charcoal Grey */
+    margin: 10px 0;
+}
+
+.container-subscribed h2 {
+    font-size: 24px;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 20px;
+}
+
+.dismiss-button {
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dismiss-button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the content vertically */
+        width: 90%;
+    }
+
+    .right {
+        background-image: url("../images/illustration-sign-up-mobile.svg"); /* Mobile-specific image */
+        background-size: contain; /* Ensure the image scales appropriately */
+        background-repeat: no-repeat;
+        background-position: top; /* Align image at the top */
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .left {
+        text-align: center; /* Center-align text for better readability */
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 28px; /* Adjust heading size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    .btn-submit {
+        font-size: 16px; /* Adjust button size */
+        padding: 12px;
+    }
+
+    .list p {
+        font-size: 14px; /* Make list items smaller for mobile */
+    }
+}
+
