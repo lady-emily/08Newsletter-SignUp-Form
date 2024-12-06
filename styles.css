@@ -1,8 +1,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -203,22 +203,32 @@ body {
 
     @media (max-width: 426px) {
     .container {
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .right {
-        height: 200px; width: 100%; background-size: contain; 
+        height: 80px; 
+        width: 100%; 
+        background-size: contain; 
+        margin: 0;
+        padding: 0;
     }
 
     .left {
         text-align: center;
         width: 100%;
-        margin-top: 20px;
+        margin: 10px;
+    }
+
+    .left h2{
+        margin-top: 5px;
     }
 
     h2 {
@@ -227,16 +237,21 @@ body {
     }
     
     .paragraph {
+        text-align: left;
         font-size: 14px;
-        margin: 10px;
+        margin: 5px 0px;
+        padding: 3%;
     }
     
     .list p {
         font-size: 14px;
+        padding: 10px;
+        text-align: left;
     }
     
     .form-group {
         margin: 15px 0;
+        padding: 12px;
     }
     
     .form-label {
@@ -245,9 +260,9 @@ body {
     }
     
     input[type="email"] {
-        /* width: 100%; */
         font-size: 14px;
         padding: 10px;
+        /* width: 80%; */
     }
     
     #email-error {
@@ -258,8 +273,22 @@ body {
     .btn-submit {
         font-size: 16px;
         padding: 12px;
-        margin: 20px 0;
+        margin: 5px 0;
+        width: 95%;
     }
+
+    .container-subscribed {
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: hsl(0, 0%, 100%);
+        width: 100vw;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
     .container-subscribed { 
         width: 60%;
         padding: 10px; 
