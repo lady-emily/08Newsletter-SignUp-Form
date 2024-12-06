@@ -201,7 +201,7 @@ body {
     background-color: hsl(4, 100%, 67%);
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 426px) {
     .container {
     flex-direction: column-reverse;
     align-items: center;
@@ -245,7 +245,7 @@ body {
     }
     
     input[type="email"] {
-        width: 100%;
+        /* width: 100%; */
         font-size: 14px;
         padding: 10px;
     }

@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!validateEmail(emailValue)) {
             emailInput.classList.add("error-border");
-            emailInput.style.backgroundColor = "hsl(4, 100%, 67%)";
-            emailInput.style.color = "hsl(4, 100%, 67%)";
+            // emailInput.style.backgroundColor = "hsl(4, 100%, 67%)";
+            // emailInput.style.color = "hsl(4, 100%, 67%)";
             emailError.style.display = "block";
             return;
         }
