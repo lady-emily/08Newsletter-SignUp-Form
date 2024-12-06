@@ -90,21 +90,25 @@ body {
     }
 
     .form-group {
-    margin: 15px 0;
+        margin: 15px 0;
+    }
+
+    .form-group > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
     }
 
     .form-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
+    /* display: flex; */
+    /* justify-content: space-between; */
     font-weight: 800;
     color: hsl(234, 29%, 20%);
-    margin-bottom: 5px;
     }
 
     #email-error {
     color: hsl(4, 100%, 67%);
-    font-size: 12px;
     display: none;
     }
 
